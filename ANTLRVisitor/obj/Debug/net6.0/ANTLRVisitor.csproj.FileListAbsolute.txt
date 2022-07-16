@@ -1,0 +1,17 @@
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\ANTLRVisitor.exe
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\ANTLRVisitor.deps.json
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\ANTLRVisitor.runtimeconfig.json
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\ANTLRVisitor.dll
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\ref\ANTLRVisitor.dll
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\ANTLRVisitor.pdb
+C:\Poc and Personal\ANTLRVisitor\bin\Debug\net6.0\Antlr4.Runtime.Standard.dll
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.GlobalUsings.g.cs
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.csproj.AssemblyReference.cache
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.AssemblyInfoInputs.cache
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.AssemblyInfo.cs
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.csproj.CoreCompileInputs.cache
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.dll
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ref\ANTLRVisitor.dll
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.pdb
+C:\Poc and Personal\ANTLRVisitor\obj\Debug\net6.0\ANTLRVisitor.genruntimeconfig.cache

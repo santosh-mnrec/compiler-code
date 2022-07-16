@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "w8M0wk8Hrt4KCIpBk7NLOwWX95FT6bYrdZ/EiZDC25PdjHSzTfglPSaZAVRGXGRqYiK0E46yLiUziAboev0tRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Poc and Personal\\AntlrToAsm\\AntlrToAsm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santosh_singh2\\.nuget\\packages\\antlr4.runtime.standard\\4.9.2\\antlr4.runtime.standard.4.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}

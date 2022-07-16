@@ -1,0 +1,9 @@
+int a;
+int b;
+b=20;
+a=10+b;
+print a;
+if (a == 3)  
+    a = a + 1; 
+    b = b + 6;
+endif 

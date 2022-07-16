@@ -1,0 +1,4 @@
+EOL=1
+WORD=2
+WS=3
+NL=4

@@ -1,0 +1,15 @@
+INIT 10 10 up  down up down 
+right 
+left 
+down up down 
+right left draw display
+down up down 
+right left draw display
+down up down 
+right left draw display
+down up down 
+right left draw display
+down up down 
+right left draw display
+draw 
+display

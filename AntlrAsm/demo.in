@@ -1,0 +1,40 @@
+%include "asm_io.inc"
+segment .data
+segment .text
+	global asm_main
+asm_main:
+	enter 0,0
+	pusha
+segment .text
+	global asm_main
+asm_main:
+	enter 0,0
+	pusha
+	popa
+	mov eax,0
+	leave
+	ret
+	mov[38 26]
+	popa
+	mov eax,0
+	leave
+	ret
+	mov[38 26]
+	popa
+	mov eax,0
+	leave
+	ret
+	popa
+	mov eax,0
+	leave
+	ret
+	popa
+	mov eax,0
+	leave
+	ret
+	mov[38 47 36 26]
+	popa
+	mov eax,0
+	leave
+	ret
+	mov[38 47 36 26]

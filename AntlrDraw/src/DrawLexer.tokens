@@ -1,0 +1,9 @@
+Up=1
+Down=2
+Left=3
+Right=4
+Init=5
+Draw=6
+Display=7
+NUMBER=8
+WS=9

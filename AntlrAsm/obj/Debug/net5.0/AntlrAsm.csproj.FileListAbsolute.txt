@@ -1,0 +1,17 @@
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\AntlrAsm.exe
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\AntlrAsm.deps.json
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\AntlrAsm.runtimeconfig.json
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\AntlrAsm.runtimeconfig.dev.json
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\AntlrAsm.dll
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\ref\AntlrAsm.dll
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\AntlrAsm.pdb
+C:\Poc and Personal\AntlrAsm\bin\Debug\net5.0\Antlr4.Runtime.Standard.dll
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.csproj.AssemblyReference.cache
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.AssemblyInfoInputs.cache
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.AssemblyInfo.cs
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.csproj.CoreCompileInputs.cache
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.dll
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\ref\AntlrAsm.dll
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.pdb
+C:\Poc and Personal\AntlrAsm\obj\Debug\net5.0\AntlrAsm.genruntimeconfig.cache

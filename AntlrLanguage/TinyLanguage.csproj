@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>TinyLanguage.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Antlr4 Include="SimpleLanguage.g4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <AntlrRuntime>C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe</AntlrRuntime>
+      <JavaExe>c:\tools\antlr.jar</JavaExe>
+      <AntOutDir>src</AntOutDir>
+      <Package>TinyLanguage</Package>
+      <Abstract>true</Abstract>
+      <GAtn>true</GAtn>
+    </Antlr4>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.9.2" />
+    <PackageReference Include="Antlr4BuildTasks" Version="8.14.0" />
+    <PackageReference Include="Z.ExtensionMethods" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

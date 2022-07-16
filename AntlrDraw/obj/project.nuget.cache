@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lkgEzVQ4xXhcENeh7OCNT9ZSchKwwwMfOFA+slfuPVBC/ZK7pJS2YprrbrOT8KzxM5iSDr5Fi9M+KE63FKVMQQ==",
+  "success": true,
+  "projectFilePath": "C:\\Poc and Personal\\AntlrDraw\\AntlrDraw.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santosh_singh2\\.nuget\\packages\\antlr4.runtime.standard\\4.9.2\\antlr4.runtime.standard.4.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,123 @@
+grammar MyLanguageV0Code;
+
+// Root non-terminal symbol
+// A program is a bunch of declarations followed by a bunch of statements
+// The Java code outputs the necessary NASM code around these declarations
+
+program       : 
+              {Console.WriteLine("%include \"asm_io.inc\"");
+               Console.WriteLine("segment .data"); }
+              declaration*
+              {Console.WriteLine("segment .text"); 
+               Console.WriteLine("\tglobal asm_main"); 
+               Console.WriteLine("asm_main:"); 
+               Console.WriteLine("\tenter 0,0"); 
+               Console.WriteLine("\tpusha"); }
+              statement*
+              {Console.WriteLine("\tpopa"); 
+               Console.WriteLine("\tmov eax,0"); 
+               Console.WriteLine("\tleave"); 
+               Console.WriteLine("\tret"); } 
+              ;
+
+// Parse rule for variable declarations
+
+declaration   : 
+              {int a; }
+              INT a=NAME SEMICOLON 
+              {Console.WriteLine("\t"+$a.text + "  dd 0");} 
+              ;
+
+// Parse rule for statements
+
+statement      : 
+               ifstmt 
+             | printstmt 
+             | assignstmt 
+               ;
+
+// Parse rule for if statements
+
+ifstmt      : 
+            {int a,b;} 
+            {String label;}
+            IF LPAREN a=identifier EQUAL b=integer RPAREN
+            {Console.WriteLine("cmp dword "+$a.ToString+","+$b.ToString);
+             label = "label_"+($IF.index).ToString();
+             Console.WriteLine("jnz "+label); }
+            statement*
+            { Console.WriteLine(label+":"); }
+            ENDIF
+            ;
+
+// Parse rule for print statements
+
+printstmt      : 
+               PRINT term SEMICOLON 
+               {Console.WriteLine("\tmov eax, "+$term.ToString);
+                Console.WriteLine("\tcall print_int");
+                Console.WriteLine("\tcall print_nl");} 
+               ;
+
+// Parse rule for assignment statements
+
+assignstmt      : 
+                {int a; }
+                a=NAME ASSIGN expression SEMICOLON 
+                {Console.WriteLine("\tmov ["+$a.text+"], eax");} 
+                ;
+
+// Parse rule for expressions
+
+expression      : 
+                {int a,b; }
+                a=term 
+                {Console.WriteLine("\tmov eax,"+$a.ToString);}
+              | 
+                a=term PLUS b=term 
+                {Console.WriteLine("\tmov eax,"+$a.ToString);}
+                {Console.WriteLine("\tadd eax,"+$b.ToString);}
+                ;
+
+// Parse rule for terms
+
+term returns [String ToString]  : 
+                                identifier {$ToString = $identifier.ToString;} 
+                              | integer {$ToString = $integer.ToString;} 
+                                ;
+
+// Parse rule for identifiers
+
+identifier returns [String ToString]: NAME {$ToString = "["+$NAME.text+"]";} ;
+
+// Parse rule for numbers 
+
+integer returns [String ToString]: INTEGER {$ToString = $INTEGER.text;} ;
+
+// Reserved Keywords
+////////////////////////////////
+
+IF: 'if';
+ENDIF: 'endif';
+PRINT: 'print';
+INT: 'int';
+
+// Operators
+PLUS: '+';
+EQUAL: '==';
+ASSIGN: '=';
+NOTEQUAL: '!=';
+
+// Semicolon and parentheses
+SEMICOLON: ';';
+LPAREN: '(';
+RPAREN: ')';
+
+// Integers
+INTEGER: [0-9][0-9]*;
+
+// Variable names
+NAME: [a-z]+;   
+
+// Ignore all white spaces 
+WS: [ \t\r\n]+ -> skip ;
